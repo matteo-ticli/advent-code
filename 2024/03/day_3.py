@@ -1,4 +1,4 @@
-from day_3_input import str_03
+from utils import load_txt
 
 
 def summation_mul(l: list) -> int:
@@ -82,8 +82,9 @@ def day_3_2(s: str):
     return summation_mul(mul_container)
 
 
-test_1 = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))"
-test_2 = "xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))"
+# test_1 = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))"
+# test_2 = "xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))"
+str_03 = load_txt("day_3.txt")
 
 print(f'Solution 3.1 : {day_3_1(str_03)}')
 print(f'Solution 3.2 : {day_3_2(str_03)}')

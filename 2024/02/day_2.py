@@ -1,4 +1,4 @@
-from utils import load_data
+from utils import load_csv
 
 
 def is_report_safe(r):
@@ -26,7 +26,7 @@ def is_report_safe_exclude_level(r):
 
 
 def day_2_1(file_name):
-    data = load_data(file_name)
+    data = load_csv(file_name)
     safe_reports = 0
     for row in data:
         row = [int(i) for i in row[0].split()]
@@ -36,7 +36,7 @@ def day_2_1(file_name):
 
 
 def day_2_2(file_name):
-    data = load_data(file_name)
+    data = load_csv(file_name)
     safe_reports = 0
     for row in data:
         row = [int(i) for i in row[0].split()]
