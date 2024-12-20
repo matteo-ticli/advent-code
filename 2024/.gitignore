@@ -162,5 +162,7 @@ cython_debug/
 
 # Exclude data inputs for each day
 **/*.txt
-03/day_3_input.py
+
+# Exclude .DS_Store
+**/.DS_Store
 
